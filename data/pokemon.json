@@ -2,108 +2,128 @@
     
     {
         "name": "Charmander",
-        "url": "https://pokeapi.co/api/v2/pokemon/4/"
+        "url": "https://pokeapi.co/api/v2/pokemon/4/",
+        "number": "#004"
     }
     ,
     {
         "name": "Beedrill",
-        "url": "https://pokeapi.co/api/v2/pokemon/15/"
+        "url": "https://pokeapi.co/api/v2/pokemon/15/",
+        "number": "#015"
     }
     ,
     {
         "name": "Squirtle",
-        "url": "https://pokeapi.co/api/v2/pokemon/7/"
+        "url": "https://pokeapi.co/api/v2/pokemon/7/",
+        "number": "#007"
     }
     ,
     {
         "name": "rattata",
-        "url": "https://pokeapi.co/api/v2/pokemon/19/"
+        "url": "https://pokeapi.co/api/v2/pokemon/19/",
+        "number": "#019"
     }
     ,
     {
         "name": "weedle",
-        "url": "https://pokeapi.co/api/v2/pokemon/13/"
+        "url": "https://pokeapi.co/api/v2/pokemon/13/",
+        "number": "#013"
     }
 
     
     ,
     {
         "name": "venusaur",
-        "url": "https://pokeapi.co/api/v2/pokemon/3/"
+        "url": "https://pokeapi.co/api/v2/pokemon/3/",
+        "number": "#003"
     }
     ,
     {
         "name": "kakuna",
-        "url": "https://pokeapi.co/api/v2/pokemon/14/"
+        "url": "https://pokeapi.co/api/v2/pokemon/14/",
+        "number": "#014"
     }
     ,
     {
         "name": "pidgey",
-        "url": "https://pokeapi.co/api/v2/pokemon//16"
+        "url": "https://pokeapi.co/api/v2/pokemon//16",
+        "number": "#016"
     }
     ,
     {
         "name": "butterfree",
-        "url": "https://pokeapi.co/api/v2/pokemon/12/"
+        "url": "https://pokeapi.co/api/v2/pokemon/12/",
+        "number": "#012"
     }
     ,
     {
         "name": "spearow",
-        "url": "https://pokeapi.co/api/v2/pokemon/21/"
+        "url": "https://pokeapi.co/api/v2/pokemon/21/",
+        "number": "#021"
     }
 
 
     ,
     {
         "name": "ekans",
-        "url": "https://pokeapi.co/api/v2/pokemon/23/"
+        "url": "https://pokeapi.co/api/v2/pokemon/23/",
+        "number": "#023"
     }
     ,
     {
         "name": "pikachu",
-        "url": "https://pokeapi.co/api/v2/pokemon/25/"
+        "url": "https://pokeapi.co/api/v2/pokemon/25/",
+        "number": "#025"
     }
     ,
     {
         "name": "nidorino",
-        "url": "https://pokeapi.co/api/v2/pokemon/33/"
+        "url": "https://pokeapi.co/api/v2/pokemon/33/",
+        "number": "#033"
     }
     ,
     {
         "name": "vulpix",
-        "url": "https://pokeapi.co/api/v2/pokemon/37/"
+        "url": "https://pokeapi.co/api/v2/pokemon/37/",
+        "number": "#037"
     }
     ,
     {
         "name": "jigglypuff",
-        "url": "https://pokeapi.co/api/v2/pokemon/39/"
+        "url": "https://pokeapi.co/api/v2/pokemon/39/",
+        "number": "#039"
     }
 
 
     ,
     {
         "name": "golbat",
-        "url": "https://pokeapi.co/api/v2/pokemon/42/"
+        "url": "https://pokeapi.co/api/v2/pokemon/42/",
+        "number": "#042"
     }
     ,
     {
         "name": "gloom",
-        "url": "https://pokeapi.co/api/v2/pokemon/44/"
+        "url": "https://pokeapi.co/api/v2/pokemon/44/",
+        "number": "#044"
     }
     ,
     {
         "name": "hypno",
-        "url": "https://pokeapi.co/api/v2/pokemon/97/"
+        "url": "https://pokeapi.co/api/v2/pokemon/97/",
+        "number": "#097"
     }
     ,
     {
         "name": "vaporeon",
-        "url": "https://pokeapi.co/api/v2/pokemon/134/"
+        "url": "https://pokeapi.co/api/v2/pokemon/134/",
+        "number": "#134"
     }
     ,
     {
         "name": "dragonair",
-        "url": "https://pokeapi.co/api/v2/pokemon/148/"
+        "url": "https://pokeapi.co/api/v2/pokemon/148/",
+        "number": "#148"
     }
 
 
