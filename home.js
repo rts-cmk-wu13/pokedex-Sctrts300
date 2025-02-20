@@ -17,7 +17,7 @@ fetch("/data/pokemon.json")
         return `
             <article>
                 <p>${pokemon.number}</p>
-                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${id}.png" alt="">
+                <img class="pics" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${id}.png" alt="" width="300">
                 <h2>${pokemon.name}</h2>
             </article>
             `
