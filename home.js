@@ -29,4 +29,4 @@ fetch("/data/pokemon.json")
         }
     )
 
-document.querySelector("main").append(sectionElm)
+document.querySelector("div").append(sectionElm)
