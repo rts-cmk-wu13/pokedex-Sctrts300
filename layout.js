@@ -6,7 +6,7 @@ divElm.innerHTML = `
 <header>
     <img src="" alt="">
     <input type="text">
-    <button></button>
+    <button>#</button>
 </header>
 <main>
     <div></div>

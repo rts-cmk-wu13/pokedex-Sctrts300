@@ -1,32 +1,33 @@
+/**
+ * Extract id as string from url to pokemon
+ * @param {string} pokemonUrl - a url to a pokemon from pokeApi 
+ * @returns {string}
+ */
+function getIdFromPokemon(pokemonUrl) {
+    return pokemonUrl.slice(0, -1).split("/").pop()
+}
 
+const artworkUrl = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork"
 
+// her begynder selve komponentet
 let sectionElm = document.createElement("section")
-sectionElm.class = "pokelist"
+sectionElm.className = "pokelist"
 
 fetch("/data/pokemon.json")
-    .then(function(response){
+    .then(function(response) {
         return response.json()
     }).then(
         function(data) {
+            sectionElm.innerHTML =  data.map(pokemon => `
 
-        let divElm = document.createElement("div")
-        divElm.innerHTML = data.map(function(pokemon) {
+                <article>
+                    <h2>${pokemon.name}</h2>
+                    <img src="${artworkUrl}/${getIdFromPokemon(pokemon.url)}.png" alt="${pokemon.name}">
+                </article>
+                
+            `).join("")
 
-            let id = pokemon.url.slice(0, -1).split("/").pop()
-
-        return `
-            <article>
-                <p>${pokemon.number}</p>
-                <img class="pics" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${id}.png" alt="" width="300">
-                <h2>${pokemon.name}</h2>
-            </article>
-            `
-
-        }).join("")
-            
-            
-            sectionElm.append(divElm)
         }
     )
 
-document.querySelector("div").append(sectionElm)
+document.querySelector("main").append(sectionElm)

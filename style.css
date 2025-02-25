@@ -1,21 +1,4 @@
-body{
-    background-color: red;
 
-}
-
-article{
-
-    border: 0.01rem;
-    border-color: rgb(197, 197, 197);
-    border-style: solid;
-    width: 26rem;
-}
-
-div{
-    background-color: white;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
 
 
 
