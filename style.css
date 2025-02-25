@@ -1,3 +1,21 @@
+body{
+    background-color: red;
+
+}
+
+.pokelist article:last-child(5) {
+ background-color: orange;
+}
+
+.pokelist{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    border: 0.01rem;
+    border-color: rgb(197, 197, 197);
+    border-style: solid;
+    width: 26rem;
+}
 
 
 
