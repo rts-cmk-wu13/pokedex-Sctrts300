@@ -10,11 +10,20 @@ let sectionElm = document.createElement("section");
 sectionElm.className = "poke-details";
  
 fetch(`https://pokeapi.co/api/v2/pokemon/${pokeName}`)
-  .then(function (response) {
-    return response.json();
+  .then(response => {
+
+    console.log(response.ok);
+    
+    if(!response.ok){
+      throw new Error("No pokemon by than name dingus")
+    }
+
+    return response.json()
+
   })
-  .then(function (pokemon) {
+  .then(pokemon => {
     console.log(pokemon);
+
     sectionElm.innerHTML = `
 
             <a href="index.html">
@@ -48,8 +57,16 @@ fetch(`https://pokeapi.co/api/v2/pokemon/${pokeName}`)
                   .join("")}
             </section>
       `;
-    document.querySelector("main").append(sectionElm);
-  });
+  }).catch(function(error) {
+    console.log(error)
+
+    sectionElm.innerHTML = `
+    <h2>${error.message}</h2>
+    <p>Go back to the <a href="index.html">details view</a></p>`; 
+  })
+
+  document.querySelector("main").append(sectionElm)
+
 
 
 
