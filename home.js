@@ -46,9 +46,10 @@ fetch(`https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=50`)
     }).then(
         function(data) {
             sectionElm.innerHTML +=  data.results.map(pokemon => `
-                <article>
-                    <p>${getIdFromPokemon(pokemon.url)}</p>
-                    <img class="poke__img" src="/img/image.png" data-imagesrc="${artworkUrl}/${getIdFromPokemon(pokemon.url)}.png" width="200" alt="${pokemon.name}">
+                
+                <article class="single__pokemon">
+                    <p>#${getIdFromPokemon(pokemon.url)}</p>
+                    <img class="poke__img" src="/img/poke.jpg" data-imagesrc="${artworkUrl}/${getIdFromPokemon(pokemon.url)}.png" width="200" alt="${pokemon.name}">
                     <h2 class="text">${pokemon.name}</h2>
                 </article>
             `).join("")
