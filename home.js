@@ -23,6 +23,14 @@ const observer = new IntersectionObserver(function(entries){
     })
 })
 
+const imgObserver = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+        if(entry.isIntersecting) {
+            entry.target.src = entry.target.dataset.imagesrc
+            imgObserver.unobserve(entry.target)
+        }
+    })
+})
 
 // her begynder selve komponentet
 let sectionElm = document.createElement("section")
@@ -40,14 +48,22 @@ fetch(`https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=50`)
             sectionElm.innerHTML +=  data.results.map(pokemon => `
                 <article>
                     <p>${getIdFromPokemon(pokemon.url)}</p>
-                    <img src="${artworkUrl}/${getIdFromPokemon(pokemon.url)}.png" width="200" alt="${pokemon.name}">
+                    <img class="poke__img" src="/img/image.png" data-imagesrc="${artworkUrl}/${getIdFromPokemon(pokemon.url)}.png" width="200" alt="${pokemon.name}">
                     <h2 class="text">${pokemon.name}</h2>
                 </article>
             `).join("")
                 
             let observedPokemon = sectionElm.querySelector("article:nth-last-child(5)")
             observer.observe(observedPokemon)
-        }
+
+            let observedImgs = sectionElm.querySelectorAll(".poke__img")
+                console.log(observedImgs);
+                observedImgs.forEach(function(observedImg){
+                    imgObserver.observe(observedImg)
+
+                })
+                
+            }
     )
     document.querySelector("main").append(sectionElm)
 }
