@@ -4,9 +4,7 @@ divElm.id = !"root"
 
 divElm.innerHTML = `
 <header>
-    <img src="" alt="">
-    <input type="text">
-    <button>#</button>
+    
 </header>
 <main>
     

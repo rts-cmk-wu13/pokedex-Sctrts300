@@ -3,6 +3,8 @@
 let queryString = window.location.search;
 let params = new URLSearchParams(queryString);
 let pokeName = params.get("name");
+console.log(pokeName);
+
  
 let sectionElm = document.createElement("section");
 sectionElm.className = "poke-details";
@@ -15,6 +17,9 @@ fetch(`https://pokeapi.co/api/v2/pokemon/${pokeName}`)
     console.log(pokemon);
     sectionElm.innerHTML = `
 
+            <a href="index.html">
+                <button href=>back</button>
+            </a>
             <p>${pokemon.name}</p>
             <p>#${pokemon.id.toString().padStart(4, "0")}</p>
             <img class="poke_img" src="${
