@@ -1,0 +1,19 @@
+body{
+    display: grid;
+    background-color: gainsboro;
+    width: 55rem;
+    justify-items: center;
+}
+
+.head{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 2rem;
+    
+}
+
+
+
+.mid{
+    background-color: white;
+}

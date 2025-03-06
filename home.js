@@ -13,7 +13,7 @@ const observer = new IntersectionObserver(function(entries){
     entries.forEach(function(entry){
         if(entry.isIntersecting) {
           currentOffset = currentOffset + 50;
-          if (currentOffset < 1304){
+          if (currentOffset < 20){
             fetchPokemon(currentOffset)
           } else {
             console.log("NOPE");
